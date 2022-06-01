@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="Normalize.CSS" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="typing">
+          <label for="logo" class="logo">My Portfolio</label>
+        </div>
+      </div>
+      <label for="info" class="info">Click the circle!</label>
+      <ul>
+        <div>
+          <div class="zoom">
+            <li><a href="Games/Games.html" class="active">Games </a></li>
+          </div>
+          <div class="zoom">
+            <li><a href="art.html" class="active">My Art</a></li>
+          </div>
+          <div class="zoom">
+            <li><a href="styleguide.html" class="active">Style guide</a></li>
+          </div>
+
+          <div class="zoom">
+            <li>
+              <a href="blogs.html" class="active">My Blogs</a>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="card" tabindex="0">
+        <span class="card__infoicon">
+          <i class="fa fa-info"></i>
+        </span>
+        <h1 class="card__title">About Me!</h1>
+
+        <p class="card__description">
+          My name is Ariana Jacpasad, I am a game developer and game designer
+          who is from South Africa. I attend University of Witwatersrand. Here
+          you can see my writings, the art made for different games, the games I
+          have developed as well small things I call my test subjects.
+        </p>
+        <p>
+          I have been interested in video games since a young age and naturally
+          became interested in the development and design process. I always
+          wondered how I would be able to provide an experience and my ideas in
+          an interactive way that was able to be enjoyed by others.
+        </p>
+      </div>
+    </div>
+    <div class="contact">
+      <p>Find me down here!</p>
+    </div>
+  </body>
+
+  <footer>
+    <h1>Contact me:</h1>
+
+    <p>084 342 4083</p>
+
+    <div class="email">
+      <a href="https://gmail.com" target="_email"> arianajacpasad@gmail.com </a>
+    </div>
+
+    <h2>Find me here!</h2>
+    <div class="Contacts">
+      <a href="https://instagram.com" target="_blank"
+        ><img
+          src="https://www.transparentpng.com/thumb/logo-instagram/YfpFOL-logo-instagram-free-transparent.png"
+          alt="Logo Instagram Free Transparent @transparentpng.com"
+          width="50"
+        />
+      </a>
+      <a href="https://twitter.com" target="_blank"
+        ><img
+          src="https://www.transparentpng.com/thumb/twitter/twitter-bird-logo-pictures-0.png"
+          alt="twitter bird logo pictures @transparentpng.com"
+          width="50"
+      /></a>
+    </div>
+
+    <div class="commentSection">
+      <h1>Comment Section</h1>
+      <p>Here you can comment your thoughts on me and my skills</p>
+
+      <form id="myForm">
+        Your name: <input id="userName" type="text" name="fname" /> <br /><br />
+        Email : <input id="userEmail" type="text" name="email" /> <br /><br />
+        <textarea id="userComment" rows="4" cols="50" name="comment">
+ Comment here...</textarea
+        >
+        <br /><br />
+
+        <input type="button" onclick="myFunction()" value="Submit" />
+      </form>
+
+      <p id="data"></p>
+
+      <script>
+        function myFunction() {
+          let data = "";
+          let name = document.getElementById("userName").value;
+          let email = document.getElementById("userEmail").value;
+          let comment = document.getElementById("userComment").value;
+
+          data =
+            "User name : " +
+            name +
+            "<br/>User email : " +
+            email +
+            "<br/>User comment : " +
+            comment;
+
+          document.getElementById("data").innerHTML = data;
+        }
+      </script>
+      <!--https://www.delftstack.com/howto/javascript/create-comment-box-in-html-and-javascript/-->
+    </div>
+  </footer>
+</html>
