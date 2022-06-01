@@ -1,0 +1,237 @@
+body {
+  background-color: #826f66;
+}
+
+nav {
+  background: #3a3845;
+  height: 46vh;
+  width: 100%;
+  padding-bottom: 2%;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  backdrop-filter: blur(5px);
+}
+
+.logo {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+ 
+  line-height: 200px;
+  margin-left: 39%;
+  margin-top: 300px;
+
+}
+.wrapper {
+display: grid;
+  place-items: center;
+}
+
+.typing{
+  width: 0ch;
+  animation: typing 6s steps(13), blink 5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 7px solid;
+
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes typing {
+  
+  from {
+    width: -100
+  }
+to{
+  width: 45%;
+}
+
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+   infinite
+  }
+}
+nav ul {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  margin-right: 19%; 
+}
+nav ul :hover{
+  border-radius: 10px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 73px;
+  margin-top: 175px;
+
+}
+.zoom {
+  display: inline-block;
+  transition: transform 1s; 
+}
+.zoom:hover {
+  transform: scale(1.2);
+}
+.info{
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 200px;
+  margin-left: 40%;
+  margin-top: 300px;
+}
+a.active {
+  background: #f7ccac;
+  color: white;
+  font-size: 2ch;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+div.container {
+  height: 100%;
+
+
+
+  place-content: center;
+  align-items: center;
+
+  font-family: "nunito", sans-serif;
+
+}
+.card {
+  margin-top: 20px;
+
+  padding: 42px 32px;
+
+  clip-path: circle(5% at 50% 25%);
+  transition: all ease-in-out 0.3s;
+  background-color: #2b2938;
+  transition: 2s;
+}
+
+  .card__infoicon {
+    position: absolute;
+
+    top: 20px;
+    right: 28px;
+
+    font-size: 1.4em;
+    color: #000000;
+    transition: ease-out 0.3s;
+  }
+  .card__title {
+    margin: 0;
+    color:white;
+    font-size: 3em;
+    line-height: 1.8;
+  }
+  .card__description {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  .card__credits {
+    margin: 0;
+    padding: 4px 0;
+
+    font-size: 1.1em;
+  }
+  .card__reference {
+    display: inline-block;
+
+    border-bottom: 1px solid transparent;
+    color: #0099ff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  div.container:hover {
+      border-bottom-color: #d6e3ec;
+    }
+  
+
+
+    :focus {
+    clip-path: circle(100%);
+    border-radius: 20px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12),
+      0px 3px 18px rgba(0, 0, 0, 0.08);
+    background: #f7ccac;
+
+    outline: none;
+  }
+    .card__infoicon {
+      opacity: 0;
+    }
+  
+  :focus {
+    box-shadow: 0px 3px 9px rgba(206, 150, 150, 0.12),
+      0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+  }
+  .card:hover{
+    background-color: #48454e;
+  }
+  div.contact{
+    font-size: 2.3em;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+   margin-top: -65px;
+    margin-left: 36%;
+  }
+
+
+  
+  div.contact {
+    position: relative;
+    display: flex;
+
+  }
+  @keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1) translateY(0); }
+    30%  { transform: scale(1,1.1)translateY(-55px);}
+    50%  { transform: scale(1,.5) translateY(0); }
+    58%  { transform: scale(1,1) translateY(-9px); }
+    65%  { transform: scale(1,1) translateY(0);}
+    100% { transform: scale(1,1) translateY(0);}
+}
+
+div.contact{
+animation: bounce 2s ease infinite;
+}
+footer {
+  text-decoration: none;
+  background-color: #48454e;
+  display: inline-block;
+  padding: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 50px;
+  margin-left: 32%;
+  font-weight: bold;
+  color: white;
+}
+div.email a{
+  color: white;
+  text-decoration: none;
+}
+div.email a:visited{
+ 
+  text-decoration: none;
+}
+
+footer img{
+  padding: 30px;
+  transition: transform 1s; 
+}
+
+footer img:hover{
+  transform: scale(1.2);
+}
+
