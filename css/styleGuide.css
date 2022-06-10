@@ -2,12 +2,13 @@
 body{
   background-color: #9c7d6e;
   
-
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
 nav {
   background: #3a3845;
-  height: 46vh;
+  height: 30vh;
   width: 100%;
   padding-bottom: 2%;
   color: black;
@@ -72,3 +73,41 @@ nav a:visited{
 
 text-decoration: none;
 }
+.writing{
+background-color: #d8b4a2;
+margin-top: 50px;
+padding: 4%;
+border-radius: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.toTop {
+padding: 20px;
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 10%;
+  background: #f7ccac;
+  color: white;
+  border-radius: 100px;
+  display: inline-block;
+
+  }
+.toTop a{
+    color:black;
+font-size: 0.8em;;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: bold;
+      text-decoration: none;
+      transition: transform 5s; 
+  }
+.toTop a:visited{
+ 
+    text-decoration: none;
+  }
+
+.toTop:hover
+{
+  transform: scale(1.2);
+}
+
