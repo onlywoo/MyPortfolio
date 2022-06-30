@@ -74,13 +74,13 @@ nav a:visited{
       font-weight: bold;
       
   }
-  p1{
+  div.link{
     color: white;
     font-family: 'Courier New', Courier, monospace;
       font-size: 1.4ch;
       
   }
-  p1 p{
+  div.link p{
       display: inline-block;
       background:#f7ccac;
       color: white;
@@ -93,7 +93,7 @@ nav a:visited{
     align-items: center;
      
   }
-  div{
+  div.writings{
     text-decoration: none;
       background:#ffe2ce;
       margin: 3%;
@@ -105,7 +105,14 @@ nav a:visited{
   }
 
 div.toTop {
-
+  text-decoration: none;
+      background:#ffe2ce;
+      margin: 3%;
+      font-size: 2.5ch;
+      padding: 20px 30px;
+      border-color: black;
+      border-radius: 20px;
+      margin-right: 60px;
   background: #f7ccac;
   color: white;
   border-radius: 100px;
