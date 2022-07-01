@@ -22,39 +22,32 @@ nav {
   margin-top: 300px;
 
 }
+
+span{
+  
+  animation: blinker 1s liner infinite;
+}
+
+@keyframes blinker{
+  50%{
+    opacity:0 ;
+  }
+}
+
+div.typeWriter{
+  color: white;
+font-size: 6ch;
+font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
 .wrapper {
 display: grid;
   place-items: center;
 }
 
-.typing{
-  width: 0ch;
-  animation: typing 6s steps(13), blink 5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 7px solid;
 
-  animation-iteration-count: infinite;
-
-}
-
-@keyframes typing {
-  
-  from {
-    width: -100
-  }
-to{
-  width: 45%;
-}
-
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-   infinite
-  }
-}
 nav ul {
   font-size: medium;
   font-family: Arial, Helvetica, sans-serif;
@@ -107,7 +100,7 @@ div.container {
 
   clip-path: circle(5% at 50% 25%);
   transition: all ease-in-out 0.3s;
-  background-color: #aba7c7;
+  background-color: #3a3845;
   transition: 2s;
 }
 
@@ -142,7 +135,7 @@ div.container {
     display: inline-block;
 
     border-bottom: 1px solid transparent;
-    color: #0099ff;
+  
     text-decoration: none;
     transition: 0.3s;
   }
@@ -160,7 +153,7 @@ div.container {
   }
   
   :focus {
-    box-shadow: 0px 3px 9px rgba(206, 150, 150, 0.12),
+    box-shadow: 0px 3px 9px rgba(255, 255, 255, 0.12),
       0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
   }
 
@@ -169,7 +162,7 @@ div.container {
     font-family: 'Courier New', Courier, monospace;
     color: white;
    margin-top: -65px;
-    margin-left: 36%;
+    margin-left: 39%;
   }
 
 
@@ -192,11 +185,14 @@ div.container {
 div.contact{
 animation: bounce 2s ease infinite;
 }
+
+
 footer {
   text-decoration: none;
   background-color: #48454e;
   display: inline-block;
   padding: 50px;
+
   font-family: 'Courier New', Courier, monospace;
   margin: 50px;
   margin-left: 32%;
@@ -204,20 +200,47 @@ footer {
   color: white;
 }
 div.email a{
+  background: #403248;
   color: white;
+  font-size: 1.8ch;
+  margin-left: 18%;
+  padding: 2px 50px;
+  border-radius: 20px;
+  text-decoration: none;
   text-decoration: none;
 }
+
+div.email h1{
+  margin-left: 30%;
+  padding-bottom: 20px;
+}
+
+div.email p{
+  font-size: 1.8ch;
+  margin-left: 38.5%;
+}
+
 div.email a:visited{
  
   text-decoration: none;
 }
 
 footer img{
-  padding: 30px;
+  margin-left: 25%;
+  padding: 5px;
   transition: transform 1s; 
 }
 
 footer img:hover{
   transform: scale(1.2);
+}
+#findme
+{
+  margin-left: 34%;
+  font-size: 2.50ch;
+}
+  
+div.calender p {
+  margin-left: 15%;
 }
 

@@ -13,7 +13,11 @@
     <nav>
       <div class="wrapper">
         <div class="typing">
-          <label for="logo" class="logo">My Portfolio</label>
+          <div class="typeWriter">
+            <p id="message"></p>
+
+            <script src="script.js"></script>
+          </div>
         </div>
       </div>
       <label for="info" class="info">Click the circle!</label>
@@ -77,15 +81,13 @@
   </body>
   <!-- https://lenadesign.org/2021/05/18/css-bouncing-text-animation/ -->
   <footer>
-    <h1>Contact me:</h1>
-
-    <p>084 342 4083</p>
-
     <div class="email">
+      <h1>Contact me:</h1>
+      <p>084 342 4083</p>
       <a href="https://gmail.com" target="_email"> arianajacpasad@gmail.com </a>
     </div>
 
-    <h2>Find me here!</h2>
+    <p id="findme">Find me here!</p>
     <div class="Contacts">
       <a href="https://instagram.com" target="_blank"
         ><img
@@ -124,6 +126,18 @@
       <script src="comments.js"></script>
 
       <!--https://www.delftstack.com/howto/javascript/create-comment-box-in-html-and-javascript/-->
+    </div>
+
+    <div class="calender">
+      <p>Here you can find my upcoming plans!</p>
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%23A79B8E&ctz=Africa%2FJohannesburg&title=Future%20Installments&mode=MONTH&hl=en_GB&showCalendars=1&src=MjM5NjYyNEBzdHVkZW50cy53aXRzLmFjLnph&src=ZW4uc2EjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4tZ2Iuc2EjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043&color=%230B8043"
+        style="border: solid 1px #777"
+        width="500"
+        height="500"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
     </div>
   </footer>
 </html>
