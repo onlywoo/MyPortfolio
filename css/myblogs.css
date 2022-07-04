@@ -1,15 +1,18 @@
 
 body{
-    background-color: #826f66;
+    background-color: #9c7d6e;
     
  
   }
   nav{
       background: #3a3845;  
-      height: 55vh;
+      height: 50vh;
     width: 100%;
     backdrop-filter: blur(60px);
     
+  }
+  nav h1{
+    margin-left: 100px;
   }
   nav ul {
       
@@ -32,13 +35,10 @@ body{
   nav ul li {
    
       display: inline-block;
+      margin-top: 30px;
     
   }
-  nav img{
-    width: 200px;margin: 30px;
-  
 
-  }
   a.active {
     background: #f7ccac;
     color: white;
@@ -74,45 +74,54 @@ nav a:visited{
       font-weight: bold;
       
   }
-  p1{
+  .link{
     color: white;
     font-family: 'Courier New', Courier, monospace;
-      font-size: 2ch;
+      font-size: 1.4ch;
+      position: absolute  ;
+      
   }
-  p1 p{
-    
+  .link p{
       display: inline-block;
+
       background:#f7ccac;
       color: white;
-      padding: 10px 15px;
+      padding: 9px 15px;
       border-radius: 20px;
-      margin-right: 60px;
+      margin-left: 20px;
       text-decoration: none;
   }
   h2{
     align-items: center;
      
   }
-  div{
+  .writings{
     text-decoration: none;
-      background:#bea194;
+      background:#ffe2ce;
       margin: 3%;
-      font-size: 3ch;
+      font-size: 2.5ch;
       padding: 20px 30px;
       border-color: black;
       border-radius: 20px;
       margin-right: 60px;
   }
 
-div.toTop {
-
+.toTop {
+  text-decoration: none;
+      background:#ffe2ce;
+      margin: 3%;
+      font-size: 2.5ch;
+      padding: 20px 30px;
+      border-color: black;
+      border-radius: 20px;
+      margin-right: 60px;
   background: #f7ccac;
   color: white;
   border-radius: 100px;
   display: inline-block;
 
   }
-  div.toTop a{
+  .toTop a{
     color:black;
 font-size: 0.8em;;
  font-family: 'Courier New', Courier, monospace;
@@ -120,7 +129,7 @@ font-size: 0.8em;;
       text-decoration: none;
     
   }
-  div.toTop a:visited{
+  .toTop a:visited{
  
     text-decoration: none;
   }
