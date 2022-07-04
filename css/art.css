@@ -6,66 +6,92 @@ body{
 }
 nav{
     background: #3a3845;  
-    height: 20vh;
+    height: 30vh;
   width: 100%;
   backdrop-filter: blur(60px);
   
 }
-nav h1{
-  margin-left: 100px;
-}
+
 nav ul {
-    
-    color: darkgray;
-    font-size: medium;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    float: left;
-    margin-top: 0%;
-    margin-right: 20%;
-}
-  
-nav ul a {
+  margin-top: -2.5%;
+  margin-left: 40%;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-    display: inline-block;
-    margin-top: 5px;
- 
 }
-  
-nav ul li {
- 
-    display: inline-block;
-    margin-top: 30px;
-  
-}
-
-a.active {
-  background: #f7ccac;
+nav h1{
+  background:#3a3845 ;
+  margin-left: -0%;
   color: white;
-  padding: 12px 5px;
- 
-  border-radius: 10px;
-  transition: transform 1s; 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 6ch;
+  font-weight: bold;
+  
 }
-a.active:hover{
-transform: scale(1.2);
+.cta {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+position: relative;
+margin: 1%;
+padding: 19px 22px;
+transition: all 0.2s ease;
+text-decoration: none;
 }
-nav p{
-transition: transform 1s; 
+.cta:before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+border-radius: 28px;
+background: #ffab9d;
+width: 56px;
+height: 56px;
+transition: all 0.3s ease;
+text-decoration: none;
 }
-nav p:hover{
-transform: scale(1.2);
+.cta span {
+position: relative;
+font-size: 16px;
+line-height: 18px;
+font-weight: 900;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+vertical-align: middle;
+text-decoration: none;
 }
-
-nav a{
-color: black;
+.cta svg {
+  text-decoration: none;
+position: relative;
+top: 0;
+margin-left: 10px;
+fill: none;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke: #111;
+stroke-width: 2;
+transform: translateX(-5px);
+transition: all 0.3s ease;
 }
-nav a:visited{
-
+.cta:hover:before {
+  text-decoration: none;
+width: 100%;
+background: #ffab9d;
+}
+.cta:hover svg {
+transform: translateX(0);
+}
+.cta:active {
+transform: scale(0.96);
 text-decoration: none;
 }
 
-
+.cta:visited{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
 
 *{box-sizing:border-box}
 
@@ -75,7 +101,7 @@ text-decoration: none;
   position: relative;
   margin: auto;
 }
-div .mySlides img{
+ .mySlides img{
 
   margin-left: 21%;
 }

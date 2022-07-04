@@ -74,14 +74,16 @@ nav a:visited{
       font-weight: bold;
       
   }
-  div.link{
+  .link{
     color: white;
     font-family: 'Courier New', Courier, monospace;
       font-size: 1.4ch;
+      position: absolute  ;
       
   }
-  div.link p{
+  .link p{
       display: inline-block;
+
       background:#f7ccac;
       color: white;
       padding: 9px 15px;
@@ -93,7 +95,7 @@ nav a:visited{
     align-items: center;
      
   }
-  div.writings{
+  .writings{
     text-decoration: none;
       background:#ffe2ce;
       margin: 3%;
@@ -104,7 +106,7 @@ nav a:visited{
       margin-right: 60px;
   }
 
-div.toTop {
+.toTop {
   text-decoration: none;
       background:#ffe2ce;
       margin: 3%;
@@ -119,7 +121,7 @@ div.toTop {
   display: inline-block;
 
   }
-  div.toTop a{
+  .toTop a{
     color:black;
 font-size: 0.8em;;
  font-family: 'Courier New', Courier, monospace;
@@ -127,7 +129,7 @@ font-size: 0.8em;;
       text-decoration: none;
     
   }
-  div.toTop a:visited{
+  .toTop a:visited{
  
     text-decoration: none;
   }

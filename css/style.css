@@ -34,7 +34,7 @@ span{
   }
 }
 
-div.typeWriter{
+.typeWriter{
   color: white;
   font-size: 6ch;
   font-weight: bold;
@@ -60,16 +60,16 @@ nav ul :hover{
 }
 nav ul li {
   display: inline-block;
-  margin-right: 130px;
+  margin-right: 126px;
   margin-top: 50px;
 
 }
 .zoom {
   display: inline-block;
-  transition: transform 1s; 
+  transition: transform 0.35s; 
 }
 .zoom:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .info{
   color: white;
@@ -89,7 +89,7 @@ a.active {
   text-decoration: none;
 }
 
-div.container {
+.container {
   height: 100%;
   font-family: "nunito", sans-serif;
 
@@ -97,12 +97,12 @@ div.container {
 .card {
   margin-top: 5%;
   margin-bottom: 30px;
-margin-left: 30px;
+margin-left: 20px;
   padding: 100px;
 
   clip-path: circle(5% at 50% 25%);
   transition: all ease-in-out 0.3s;
-  background-color: #3a3845;
+  background-color: #3e384b;
   transition: 2s;
 }
 
@@ -154,7 +154,7 @@ margin-left: 30px;
       0px 3px 18px rgba(0, 0, 0, 0.08), 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
   }
 
-  div.contact{
+.contact{
     font-size: 2.3em;
     font-family: 'Courier New', Courier, monospace;
     color: white;
@@ -164,7 +164,7 @@ margin-left: 30px;
 
 
   
-  div.contact {
+.contact {
     position: relative;
     display: flex;
 
@@ -179,25 +179,25 @@ margin-left: 30px;
     100% { transform: scale(1,1) translateY(0);}
 }
 
-div.contact{
+.contact{
 animation: bounce 2s ease infinite;
 }
 
 
 footer {
   text-decoration: none;
-  background-color: #48454e;
+  background-color: #3e384b;
   display: inline-block;
   padding: 50px;
 
   font-family: 'Courier New', Courier, monospace;
   margin: 50px;
-  margin-left: 31.5%;
+  margin-left: 27.5%;
   font-weight: bold;
   color: white;
 }
-div.email a{
-  background: #403248;
+.email a{
+  background: #b299ea;
   color: white;
   font-size: 1.8ch;
   margin-left: 18%;
@@ -207,23 +207,33 @@ div.email a{
   text-decoration: none;
 }
 
-div.email h1{
+.email h1{
   margin-left: 30%;
   padding-bottom: 20px;
 }
 
-div.email p{
+.email p{
   font-size: 1.8ch;
   margin-left: 38.5%;
 }
 
-div.email a:visited{
+.email a:visited{
  
   text-decoration: none;
 }
+.twitter{
+  margin-left: 4%;
+}
+.twitter p
+{
+margin-left: 10%;
+font-size: 2ch;
+
+}
+
 
 footer img{
-  margin-left: 25%;
+  margin-left: 45%;
   padding: 5px;
   transition: transform 1s; 
 }
@@ -236,8 +246,18 @@ footer img:hover{
   margin-left: 34%;
   font-size: 2.50ch;
 }
+  .commentSection{
+    background: #9c7d6e;
+    padding-bottom: 10px ;
+    padding-left: 15px;
+  border: #9c7d6e;  
+  border-radius: 20px;
   
-div.calender p {
-  margin-left: 15%;
+  }
+  .calender{
+    margin-left: 8%;
+  }
+.calender p {
+  margin-left: 16%;
 }
 
