@@ -91,7 +91,7 @@ nav h1{
 /* 2. Make nav sticky */
 main > .section-nav {
 	position: sticky;
-	top: 10rem;
+	top: 2rem;
 	align-self: start;
 }
 
@@ -133,8 +133,12 @@ main > .section-nav {
   transition: all 0.3s ease;
 
 }
-
-/** Poor man's reset **/
+.section-nav p{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 2.5ch;
+}
 * {
 	box-sizing: border-box;
 }
@@ -149,7 +153,8 @@ body {
 
 ul, ol {
 	list-style: none;
-	margin: 0;
+  margin-left: 5px;
+	margin-right: px;
 	padding: 0;
 }
 li {
